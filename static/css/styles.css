@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	background: #178b55;
+	color: #fff;
+	font-size: 18px;
+}
+
+form {
+	width: 100%;
+	font-size: 40px;
+}
+
+form input {
+	width: 500px;
+	height: 50px;
+	color: rgb(115, 115, 115);
+	font-size: 40px;
+}
+
+form button {
+	width: 100px;
+	height: 50px;
+	background-color:#fff;
+	font-size: 40px;
+	border-color: #fff;
+	color: rgb(115, 115, 115);
+}
+
+.inputTicker {
+	font-size: 27px;
+}
+
+.compsSpread {
+	align-self: center;
+}
+
+.compsSpread table {
+	border-collapse: collapse;
+	width: 610px;
+	font-size: 20px;
+	margin: 0 auto; 
+}
+
+.compsSpread th {
+	height: 50px;
+	font-size: 25px;
+	font-weight: 700;
+	background: #fff;
+	color: #178b55;
+}
+
+.compsSpread td {
+	height: 30px;
+}
+
+.compsSpread table, th, td {
+	border: 2px solid white;
+	text-align: center;
+}

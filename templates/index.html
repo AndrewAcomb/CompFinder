@@ -1,0 +1,40 @@
+<div class="header">
+    
+    <meta charset="UTF-8">
+    <title>CompFinder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <h1>CompFinder</h1>
+
+</div>
+
+<body>
+
+<div class="queryForm">
+	<h2>Enter the ticker of a company in the S&P 500.</h2>
+
+     <!-- Ticker input form, currently inactive -->
+     <form autocomplete="off" action="{{ url_for('response')}}"method="post">
+      <input type="text" name="ticker" placeholder="ex: AAPL" required="required" />
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Go</button>
+  </form>
+
+</div>
+
+  <!-- Table returned from  -->
+
+  <div class="inputTicker">
+    {{ Input }}
+  </div>
+
+  <br>
+
+  <div class="compsSpread">
+    {{ Table }}
+  </div>
+
+
+
+  
+</body>
