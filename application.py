@@ -3,7 +3,7 @@ from flask_table import Table, Col
 import string
 import json
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Load in data
 
@@ -14,7 +14,7 @@ class ItemTable(Table):
     Ticker = Col('Ticker')
 
 
-@app.route('/')
+@application.route('/')
 def home():
     """
     Description: Render default page without text
@@ -24,7 +24,7 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/response', methods = ['POST'])
+@application.route('/response', methods = ['POST'])
 def response():
     """
     Description: Render page with comps
@@ -48,4 +48,4 @@ def response():
 
 
 if __name__ == "__main__":
-    app.run(debug = True, host='0.0.0.0')
+    application.run(debug = True)
